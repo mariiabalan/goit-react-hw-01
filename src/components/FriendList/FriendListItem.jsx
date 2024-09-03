@@ -1,19 +1,15 @@
+import s from "./FriendList.module.css";
+
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div className="friend-list-item">
+    <div className={s.friendlistitem}>
       <img src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
-      <p className={isOnline ? "status-online" : "status-offline"}>
+      <p className={s.name}>{name}</p>
+      <p className={isOnline ? s.statusonline : s.statusoffline}>
         {isOnline ? "Online" : "Offline"}
       </p>
     </div>
   );
-};
-
-FriendListItem.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
 };
 
 export default FriendListItem;

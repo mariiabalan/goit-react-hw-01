@@ -1,26 +1,35 @@
-.friend-list {
+.friendlist {
   list-style: none;
   padding: 0;
-}
-
-.friend-item {
-  margin-bottom: 10px;
-}
-
-.friend-list-item {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
 }
+
+/* .frienditem {
+  margin-bottom: 10px;
+} */
+
+/* .friendlistitem {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+} */
 
 .friend-list-item img {
   margin-right: 10px;
   border-radius: 50%;
 }
 
-.status-online {
+.statusonline {
   color: green;
+  font-size: small;
 }
 
-.status-offline {
+.statusoffline {
   color: red;
+  font-size: small;
 }
