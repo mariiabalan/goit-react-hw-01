@@ -1,0 +1,14 @@
+.friend-list-item img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.statusonline {
+  color: green;
+  font-size: small;
+}
+
+.statusoffline {
+  color: red;
+  font-size: small;
+}
